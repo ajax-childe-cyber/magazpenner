@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="magazpenner/magazpenner.vcxproj" Id="aea98303-029c-4b2f-ad5c-628bdd941f9e" />
+</Solution>
