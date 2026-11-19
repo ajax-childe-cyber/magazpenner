@@ -10,7 +10,20 @@ int main()
 
 	Start();
 
+	delete[]loginArr;
+	delete[]passArr;
+	delete[]statusArr;
+	delete[]userIdArr;
 
+	if (isCtorageCreated)
+	{
+		delete[]idArr;
+		delete[]nameArr;
+		delete[]countArr;
+		delete[]priceArr;
+	}
+
+	
 
 
 

@@ -1,5 +1,6 @@
 #include "Autorization.hpp"
-#include "Accounts.hpp"
+
+
 
 void Start()
 {
@@ -9,7 +10,8 @@ void Start()
 		{
 			if (currentStatus == L"SuperAdmin")
 			{
-				//TO_DO
+				CreateStroge();
+				SuperAdminMenu();
 			}
 			else if (currentStatus == L"Admin")
 			{
@@ -57,6 +59,7 @@ bool Login()
 						<< L"Ваш уровень доступа: " << statusArr[i] << L"\n";
 					currentId = userIdArr[i];
 					currentStatus = statusArr[i];
+					Sleep(2000);
 					return true;
 				}
 			}
@@ -64,5 +67,68 @@ bool Login()
 			Sleep(2000);
 		}
 		
+	}
+}
+
+void SuperAdminMenu()
+{
+	std::wstring choose;
+	while (true)
+	{
+		system("cls");
+		std::wcout << L"\n\n\t\t\t Меню супер админа\n\n";
+		std::wcout << L"1 - Начать продажу\n";
+		std::wcout << L"2 - Показать склад\n";
+		std::wcout << L"3 - Пополнить товары\n";
+		std::wcout << L"4 - Списать товары\n";
+		std::wcout << L"5 - Изменить цены\n";
+		std::wcout << L"6 - Редактировать склад\n";
+		std::wcout << L"7 - Редактирование сотрудников\n";
+		std::wcout << L"8 - Отчёт о прибыли\n";
+		std::wcout << L"9 - Выход\n";
+		std::wcout << L"Ввод: ";
+		Getline(choose);
+
+		if (choose == L"1")
+		{
+
+		}
+		else if (choose == L"2")
+		{
+			ShopStorage();
+		}
+		else if (choose == L"3")
+		{
+			AddProduct();
+		}
+		else if (choose == L"4")
+		{
+			RemoveProduct();
+		}
+		else if (choose == L"5")
+		{
+			ChangePrice();
+		}
+		else if (choose == L"6")
+		{
+			ChangeStorage();
+		}
+		else if (choose == L"7")
+		{
+
+		}
+		else if (choose == L"8")
+		{
+
+		}
+		else if (choose == L"9")
+		{
+
+		}
+		else
+		{
+			Err();
+		}
+
 	}
 }
