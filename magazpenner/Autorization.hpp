@@ -1,7 +1,6 @@
 #ifndef _AUTORIZATION_HPP
 #define	_AUTORIZATION_HPP
 
-#include "Accounts.hpp"
 #include "Stroge.hpp"
 
 void Start();

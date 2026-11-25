@@ -97,15 +97,15 @@ void SuperAdminMenu()
 		{
 			ShopStorage();
 		}
-		else if (choose == L"3")
+		else if (choose == L"3" && sizeSt > 0)
 		{
 			AddProduct();
 		}
-		else if (choose == L"4")
+		else if (choose == L"4" && sizeSt > 0)
 		{
 			RemoveProduct();
 		}
-		else if (choose == L"5")
+		else if (choose == L"5" && sizeSt > 0)
 		{
 			ChangePrice();
 		}
@@ -115,15 +115,17 @@ void SuperAdminMenu()
 		}
 		else if (choose == L"7")
 		{
-
+			ChangeAccount();
 		}
 		else if (choose == L"8")
 		{
-
+			ChangeStorageLimits();
 		}
 		else if (choose == L"9")
 		{
-
+			std::wcout << L"\nВыход из редактора склада\n\n";
+			Sleep(1500);
+			break;
 		}
 		else
 		{

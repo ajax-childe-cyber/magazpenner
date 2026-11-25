@@ -1,7 +1,7 @@
 #ifndef _STROGE_HPP
 #define	_STROGE_HPP
 
-#include "Servise.hpp"
+#include "Accounts.hpp"
 
 
 
@@ -26,5 +26,8 @@ void ChangePrice();
 
 void ChangeStorage();
 void AddNewProduct();
+void ChangeProductName();
+void DeleteProduct();
+void ChangeStorageLimits();
 
 #endif //!_STROGE_HPP

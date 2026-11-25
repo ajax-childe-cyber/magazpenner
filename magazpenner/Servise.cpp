@@ -16,7 +16,7 @@ bool IsNumber(const std::wstring& str)
 
 	for (size_t i = 0; i < str.size(); i++)
 	{
-		if (!std::isdigit(str[i]))
+		if (!std::iswdigit(str[i]))
 		{
 			std::wcout << L"Введенные данные не являются числом\n\n";
 			Sleep(1500);
