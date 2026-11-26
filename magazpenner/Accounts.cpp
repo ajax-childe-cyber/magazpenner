@@ -153,9 +153,9 @@ void CreateNewAccount()
 			system("cls");
 			std::wcout << L"Введите роль для нового пользователя или \"exit\" для выхода\n";
 			std::wcout << L"1 - Сотрудник\n";
-			std::wcout << L"1 - Администратор\n";
+			std::wcout << L"2 - Администратор\n";
 			std::wcout << L"Ввод: ";
-			Getline(chooseStatus);
+			Getline(choose);
 			if (choose == L"exit" || choose == L"Exit")
 			{
 				std::wcout << L"Отмена создания учетной записи\n\n";
