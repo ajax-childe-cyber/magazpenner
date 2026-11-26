@@ -39,7 +39,7 @@ void ArrPushBack(ArrType*& arr, size_t size)
 	delete[]temp;
 }
 
-template <class Arrtype>
+template <class ArrType>
 void ArrDeleteByIndex(ArrType*& arr, size_t size, size_t index)
 {
 	size--;
@@ -52,7 +52,7 @@ void ArrDeleteByIndex(ArrType*& arr, size_t size, size_t index)
 		}
 		temp[i] = arr[j];
 	}
-	std::swap(arr < temp);
+	std::swap(arr, temp);
 	delete[]temp;
 }
 
